@@ -131,7 +131,7 @@ namespace PowerPointAddInpped
                     //Globals.ThisAddIn.Application.ActiveWindow.Panes[2].Activate();
                     // presentation.ActivePresentation.Slides[slidenumber].Name = Date;
                     // string s = presentation.ActivePresentation.Slides[slidenumber].NotesPage.Shapes[2].TextFrame.TextRange.Text;
-                    presentation.ActivePresentation.Slides[slidenumber].NotesPage.Shapes[2].TextFrame.TextRange.Text = s + "\r\n" + Date + " " + T;
+                    presentation.ActivePresentation.Slides[slidenumber].NotesPage.Shapes[2].TextFrame.TextRange.Text =  Date + " " + T;
 
 
                 //presentation.ActivePresentation.Slides[slidenumber].Comments.Add(n,p, "KMS", "KMS", Date + " " + T);
