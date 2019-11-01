@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="KioskClient1.dll" version="1.0.0.0" publicKeyToken="8a5491d9dad27ede" language="neutral" processorArchitecture="msil" type="win32" />
-  <description xmlns="urn:schemas-microsoft-com:asm.v1">KioskClient1</description>
+  <asmv1:assemblyIdentity name="PowerPointAddInpped.dll" version="1.0.0.2" publicKeyToken="e137747ae38d0aea" language="neutral" processorArchitecture="msil" type="win32" />
+  <description xmlns="urn:schemas-microsoft-com:asm.v1">PowerPointAddInpped</description>
   <application />
   <entryPoint>
     <co.v1:customHostSpecified />
@@ -122,18 +122,6 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KioskClient1.dll" size="15872">
-      <assemblyIdentity name="KioskClient1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0h9uXEKFys/KRWH5hwpI/HV7IPGsz9VelYoORb7Zyxs=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.Common.v4.0.Utilities.dll" size="32664">
       <assemblyIdentity name="Microsoft.Office.Tools.Common.v4.0.Utilities" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -145,11 +133,23 @@
       </hash>
     </dependentAssembly>
   </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PowerPointAddInpped.dll" size="21504">
+      <assemblyIdentity name="PowerPointAddInpped" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Z/O1u5Vv+EdPX61oyzFXAWmznJhmdNR42OP2q4zUg4Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
   <vstav3:addIn xmlns:vstav3="urn:schemas-microsoft-com:vsta.v3">
     <vstav3:entryPointsCollection>
       <vstav3:entryPoints>
-        <vstav3:entryPoint class="KioskClient1.ThisAddIn">
-          <assemblyIdentity name="KioskClient1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+        <vstav3:entryPoint class="PowerPointAddInpped.ThisAddIn">
+          <assemblyIdentity name="PowerPointAddInpped" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
         </vstav3:entryPoint>
       </vstav3:entryPoints>
     </vstav3:entryPointsCollection>
@@ -159,13 +159,13 @@
     <vstav3:application>
       <vstov4:customizations xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">
         <vstov4:customization>
-          <vstov4:appAddIn application="PowerPoint" loadBehavior="3" keyName="KioskClient1">
-            <vstov4:friendlyName>KioskClient1</vstov4:friendlyName>
-            <vstov4:description>KioskClient1</vstov4:description>
+          <vstov4:appAddIn application="PowerPoint" loadBehavior="3" keyName="PowerPointAddInpped">
+            <vstov4:friendlyName>PowerPointAddInpped</vstov4:friendlyName>
+            <vstov4:description>PowerPointAddInpped</vstov4:description>
             <vstov4.1:ribbonTypes xmlns:vstov4.1="urn:schemas-microsoft-com:vsto.v4.1" />
           </vstov4:appAddIn>
         </vstov4:customization>
       </vstov4:customizations>
     </vstav3:application>
   </vstav3:addIn>
-<publisherIdentity name="CN=gr\rgoff" issuerKeyHash="8f37c232e6db3b97de7c878d2d59cf87fd195eaf" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>v2eDimvj7MCesZa3fmBrkOZMelM1UKQd87pFAq7q6Cc=</DigestValue></Reference></SignedInfo><SignatureValue>nueWsAPyQDkkzxoHf+ur3meJgYJ9IYPpgFUQblTbh4WSFPjJCZUblLmZJCgNZo0ZOgJCU8A8nV7U+xHVbtdteIjz+0c5+ug6UeRYh8ykjsasXQvc7jYjVg5Ib5OR4k4tjq7E9gbLVCKxKwOnbSVFWTM8Axie0tqClS09fyyp/tE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>vos95pzcxI1JxalyGJM9x1Ls/IdyWr3R8EYdeHREp8LSiQF01J0zVgcKW5LhO4sXGdt9vfjYBL5SZgWJZo7NvALDj4LFYbmph6oGeNNEUZEQgoPt+IDKsjaJpkRD2Qe4u1Umd16YHmzGyPPBt63m4E9Dr1wBVJrAYvhcBfxRDqk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="27e8eaae0245baf31da45035537a4ce6906b607eb796b19ec0ece36b8a8367bf" Description="" Url=""><as:assemblyIdentity name="KioskClient1.dll" version="1.0.0.0" publicKeyToken="8a5491d9dad27ede" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=gr\rgoff</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>8j1DHDYl1e/YG/07Sx/2sPCxXVzwZklgk72lBjY3iOQ=</DigestValue></Reference></SignedInfo><SignatureValue>OTELrYnb9tJuQKhaN05b/AGLesIyETx1xgmW3584gaVLXyonet7zVHGikM9FJ7tRz/BBWVDPNpCI8buvRCRpDzzJt12ig0cJKOVyLkFZGHs5i2plv4tlkqSgkEPqQ/mGYwKzK5kgbowVlRpbVfrk/ie65KJ+xlpyE9WinbdjkAw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>vos95pzcxI1JxalyGJM9x1Ls/IdyWr3R8EYdeHREp8LSiQF01J0zVgcKW5LhO4sXGdt9vfjYBL5SZgWJZo7NvALDj4LFYbmph6oGeNNEUZEQgoPt+IDKsjaJpkRD2Qe4u1Umd16YHmzGyPPBt63m4E9Dr1wBVJrAYvhcBfxRDqk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBuTCCASKgAwIBAgIQQA0SIVybo7xGithtFjVVWjANBgkqhkiG9w0BAQsFADAbMRkwFwYDVQQDHhAAZwByAFwAcgBnAG8AZgBmMB4XDTE4MDcxOTE5MTMxN1oXDTE5MDcyMDAxMTMxN1owGzEZMBcGA1UEAx4QAGcAcgBcAHIAZwBvAGYAZjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAvos95pzcxI1JxalyGJM9x1Ls/IdyWr3R8EYdeHREp8LSiQF01J0zVgcKW5LhO4sXGdt9vfjYBL5SZgWJZo7NvALDj4LFYbmph6oGeNNEUZEQgoPt+IDKsjaJpkRD2Qe4u1Umd16YHmzGyPPBt63m4E9Dr1wBVJrAYvhcBfxRDqkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQArfgs+/Btov3jRSSe97LH7hKAFBAkKTni2Bj8zK7aHRM73QEMFM2GL35i36WlucELXHvwarT0CM/PCmdYMGQqk6NBVXpIUj84K0DCc7kaIy0nv8GZ96zLqBWyRz+RYIk8GRE8pJeeb3QIJL9veusaacSrinsss1TzsxMLtU+Gfeg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=gr\rgoff" issuerKeyHash="745c3aac78f7c93221e43f21a14fa883c1e4fcb9" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>hC+bI6xkhGa1IcS4KIRLVNCG8zZLrRnQTTJIWcGoSXM=</DigestValue></Reference></SignedInfo><SignatureValue>aGca5gnhyWC+RLA12wvqn0PxRKPZ/MIMtTGMY/9w0qAcIeqbDPotFcunZp9e/2xfd5gcmrQYd3/D6y9g5H6TRgo1Xpop2v3qbF6BKY1ctlWT4Nc5wxjf5xVWucjnISAoPcq2nHXgZEh6sOIXGAyWb1Q8fUsnK80DjXCIXc/EsPg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>w4RI1+iKvuY9h7iLuq9ivXFIdubhaqc/3Eua/ZWelwTSdPkUKwsBANq25OB3cbF8KzXD2z2Q66dK5IqgwsN8XtQ3aZQ+t03o4n9QH6nfQxboYWJktJt6HuaTlsfI4S85DTZrtDXCnMtqdNJ5DgsP5ruyIrtF9gm0ZMm7EerIjLU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="7349a8c15948324dd019ad4b36f386d0544b8428b8c421b5668464ac239b2f84" Description="" Url=""><as:assemblyIdentity name="PowerPointAddInpped.dll" version="1.0.0.2" publicKeyToken="e137747ae38d0aea" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=gr\rgoff</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>PWYYEHShZnoCqkyS7ouHY3ISItLQiCc4Hhq+2EmxHfg=</DigestValue></Reference></SignedInfo><SignatureValue>ZSuYt8cMsLQR+oHXUlRpZLY7HTtxmTipEeqwKpAzQTfKHrZnqARIqavv6DMX4zQ4I0H3gVdxxQbTA+Y5uC/MGCtBirUsFdBDrnxQVqzzPzB9ByyQJe+E9smw6GAnb/Y3G2kTzV021yv9qGK594Jiwo9YmHZdprUR5qSv7BZunKw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>w4RI1+iKvuY9h7iLuq9ivXFIdubhaqc/3Eua/ZWelwTSdPkUKwsBANq25OB3cbF8KzXD2z2Q66dK5IqgwsN8XtQ3aZQ+t03o4n9QH6nfQxboYWJktJt6HuaTlsfI4S85DTZrtDXCnMtqdNJ5DgsP5ruyIrtF9gm0ZMm7EerIjLU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBuTCCASKgAwIBAgIQWv7r82X7Q5JGNm637bAFkjANBgkqhkiG9w0BAQsFADAbMRkwFwYDVQQDHhAAZwByAFwAcgBnAG8AZgBmMB4XDTE4MDcxODE2MDYyMFoXDTE5MDcxODIyMDYyMFowGzEZMBcGA1UEAx4QAGcAcgBcAHIAZwBvAGYAZjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAw4RI1+iKvuY9h7iLuq9ivXFIdubhaqc/3Eua/ZWelwTSdPkUKwsBANq25OB3cbF8KzXD2z2Q66dK5IqgwsN8XtQ3aZQ+t03o4n9QH6nfQxboYWJktJt6HuaTlsfI4S85DTZrtDXCnMtqdNJ5DgsP5ruyIrtF9gm0ZMm7EerIjLUCAwEAATANBgkqhkiG9w0BAQsFAAOBgQBQ5JEY9VXYsRV+w9XrIXPVZnKR71BGj7+/h3B9kOQHbXrFt+mCA2Szw3hpEvTYND+dDEkRqsaQBpB5uM7aQDGbDoQj/caLd1hj6CHz9dV9ijduAMWvj45vSN6JOA5Luvq4G3wizTSGNdPkV9O2mXDiLdjOTIDkLjWsxkAIE9U95A==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -21,3 +21,14 @@ F:\Programs\repos\KioskClient1\KioskClient1\obj\Debug\KioskClient1.csproj.Genera
 F:\Programs\repos\KioskClient1\KioskClient1\obj\Debug\KioskClient1.csproj.CopyComplete
 F:\Programs\repos\KioskClient1\KioskClient1\obj\Debug\KioskClient1.dll
 F:\Programs\repos\KioskClient1\KioskClient1\obj\Debug\KioskClient1.pdb
+\\grserver01\users\rgoff\My Documents\GitHub\Kiosk-Slide-Show\Kiosk Client\KioskClient1\bin\Debug\KioskClient1.dll
+\\grserver01\users\rgoff\My Documents\GitHub\Kiosk-Slide-Show\Kiosk Client\KioskClient1\bin\Debug\KioskClient1.pdb
+\\grserver01\users\rgoff\My Documents\GitHub\Kiosk-Slide-Show\Kiosk Client\KioskClient1\bin\Debug\KioskClient1.dll.manifest
+\\grserver01\users\rgoff\My Documents\GitHub\Kiosk-Slide-Show\Kiosk Client\KioskClient1\bin\Debug\KioskClient1.vsto
+\\grserver01\users\rgoff\My Documents\GitHub\Kiosk-Slide-Show\Kiosk Client\KioskClient1\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+\\grserver01\users\rgoff\My Documents\GitHub\Kiosk-Slide-Show\Kiosk Client\KioskClient1\obj\Debug\KioskClient1.csprojAssemblyReference.cache
+\\grserver01\users\rgoff\My Documents\GitHub\Kiosk-Slide-Show\Kiosk Client\KioskClient1\obj\Debug\KioskClient1.Properties.Resources.resources
+\\grserver01\users\rgoff\My Documents\GitHub\Kiosk-Slide-Show\Kiosk Client\KioskClient1\obj\Debug\KioskClient1.csproj.GenerateResource.cache
+\\grserver01\users\rgoff\My Documents\GitHub\Kiosk-Slide-Show\Kiosk Client\KioskClient1\obj\Debug\KioskClient1.csproj.CopyComplete
+\\grserver01\users\rgoff\My Documents\GitHub\Kiosk-Slide-Show\Kiosk Client\KioskClient1\obj\Debug\KioskClient1.dll
+\\grserver01\users\rgoff\My Documents\GitHub\Kiosk-Slide-Show\Kiosk Client\KioskClient1\obj\Debug\KioskClient1.pdb
