@@ -9,10 +9,9 @@ The two addons KioskManager and KioskClient do the following:
 KioskManager:
 
 For Kiosk Manager you have three options:
-Expire Slide - Allows you to pick the date, time, and slide number to expire. The expiration time and date are written to the Notes section of that 
-               slide
-Unexpire Slide - This removes the date and time from the slide
-Toogle Slide - This toggles the slides hidden property 
+- Expire Slide - Allows you to pick the date, time, and slide number to expire. The expiration time and date are written to the Notes section of that slide
+- Unexpire Slide - This removes the date and time from the slide
+- Toogle Slide - This toggles the slides hidden property 
 
 ![](https://imgur.com/Rpe5Qy5.jpg)
 
